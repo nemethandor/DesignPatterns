@@ -1,17 +1,21 @@
 package com.pattern.runners;
 
-import com.pattern.core.facade.ShapeMakerFacade;
+import com.pattern.core.facade.cars.CarMakerFacade;
 
 public class FacadePatternRunner {
 
-	public static void main(String[] args) {
-		ShapeMakerFacade shapeMaker = new ShapeMakerFacade();
+    public static void main(String[] args) {
+        // ShapeMakerFacade shapeMaker = new ShapeMakerFacade();
 
-		shapeMaker.drawCircle();
-		shapeMaker.drawRectangle();
-		shapeMaker.drawSquare();
+        // shapeMaker.drawCircle();
+        // shapeMaker.drawRectangle();
+        // shapeMaker.drawSquare();
 
-		// shapeMaker.drawAll();
-	}
+        // shapeMaker.drawAll();
+
+        CarMakerFacade carMakerFacade = new CarMakerFacade();
+
+        carMakerFacade.mindenkiMegy();
+    }
 
 }

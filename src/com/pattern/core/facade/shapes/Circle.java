@@ -1,4 +1,4 @@
-package com.pattern.core.facade;
+package com.pattern.core.facade.shapes;
 
 public class Circle implements ShapeInterface {
 
