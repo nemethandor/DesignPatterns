@@ -4,20 +4,23 @@ package com.pattern.core.factorymethod;
 public class CarFactory {
 	
 	   //use getShape method to get object of type shape 
-	   public CarInterface getShape(String shapeType){
-	      if(shapeType == null){
+	   public CarInterface getCar(String carType){
+	      if(carType == null){
 	         return null;
 	      }		
-	      if(shapeType.equals("RCAR")){
+	      if(carType.equals("RCAR")){
 	         return new RaceCar();
 	         
-	      } else if(shapeType.equals("TRUCK")){
+	      } else if(carType.equals("TRUCK")){
 	         return new Truck();
 	         
-	      } else if(shapeType.equals("ACAR")){
+	      } else if(carType.equals("ACAR")){
 	         return new AmbulanceCar();
+	      }else if(carType.equals("QUAD")){
+	    	  return new Quad();
 	      }
 	      
 	      return null;
+	   
 	   }
 	}
